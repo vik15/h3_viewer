@@ -1,0 +1,17 @@
+H3viewer
+
+https://h3.chotard.com/
+https://clupasq.github.io/h3-viewer/
+
+PLAN:
+
+Display grids on a map from OSM/google or use nextgis qgis
+Input lat long highlight the cell
+And if cell selected get the centroid latlong
+Measure distances between cells by centroids
+Measure distances between latlongs by highlighting cells
+Have krings feature
+Have area of cells displayed
+Csv upload then map cells, etc and can download
+Use maps api for place info
+
