@@ -4,6 +4,7 @@ import h3
 
 router = APIRouter(prefix="/grid")
 
+
 ## Get neighbouring h3 cells
 @router.get("/get_neighbouring_cells")
 def get_neighbouring_cells(cell, k: int =1, disk : bool = True):
@@ -24,6 +25,12 @@ def get_grid_distance(cell1, cell2):
         status_code=400, 
         detail="Unable to compute H3 grid distance. The cells may be too far apart or invalid.",
         )
+
+
+
+@router.get("/are_neighbour_cells")
+def are_neighbour_cells(cell1, cell2):
+    return h3.are_neighbor_cells(cell1, cell2)
 
 
 

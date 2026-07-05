@@ -7,7 +7,7 @@ router = APIRouter(prefix="/index")
 
 
 @router.get("/get_str_to_int")
-def get_str_to_int(cell, rou):
+def get_str_to_int(cell):
     return h3.str_to_int(cell)
 
 
